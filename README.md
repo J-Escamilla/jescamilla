@@ -4,3 +4,6 @@ suggestions!
 
 
 For the time being, ignore the JavaScript file. I'm still learning and haven't added the feature I wanted to yet. 
+
+ALSO! I don't know Vue or Tailwind quite yet. Those are there merely as placeholders because that's what I'm going to be learning soon.
+I'll also add WordPress pretty soon as well. 
