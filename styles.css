@@ -312,7 +312,7 @@ textarea {
 
 /* Footer */
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 812px) {
     .logo {
         font-size: 12px;
     }
@@ -450,7 +450,12 @@ textarea {
         padding: 15px;
         border-radius: 15px;
         margin-top: 10px;
-        justify-content: center;
+        /* justify-content: center; */
+    }
+
+    .submit:hover {
+        background-color: #b91313;
+        cursor: pointer;
     }
 
     .nav-links {
