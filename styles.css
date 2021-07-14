@@ -450,7 +450,9 @@ textarea {
         padding: 15px;
         border-radius: 15px;
         margin-top: 10px;
-        /* justify-content: center; */
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
     }
 
     .submit:hover {
