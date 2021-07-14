@@ -442,6 +442,17 @@ textarea {
         width: 300px;
     }
 
+    .submit {
+        border: none;
+        width: 200px;
+        background-color: #960a0a;
+        color: #fff;
+        padding: 15px;
+        border-radius: 15px;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
     .nav-links {
         display: none;
     }
