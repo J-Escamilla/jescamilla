@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: poppins, sans-serif;
+    font-weight: bold;
+}
+
+
+/* Main Body */
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 5vh;
+    margin-bottom: 20px;
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2a507a, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow:  0px 7px 8px 3px rgba(0, 0, 0, 0.4);
+}
+
+.logo {     
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-family: 'Staatliches', sans-serif;
+    letter-spacing: 2px;
+    animation: fadeRight .75s ease-in-out; 
+        
+}
+
+
+.logo a{
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-family: 'Staatliches', sans-serif;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+    animation: fadeRight 1.5s ease-in-out;
+}
+
+
+.nav-links a {
+    color:white;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: 'bebas neue', sans-serif;
+    padding: 5px;
+    margin: 10px;
+}
+
+.fixed-nav {
+    display: none;
+}
+
+li.active a {
+    font-size: 20px;
+    color: #9b2828;
+}
+
+a:hover {
+    color: #9b2828;
+    transition: 1s;
+}
+
+.logo:hover {
+    color: #9b2828;
+    transition: 2s;
+    
+}
+
+.headers {
+    font-family: 'bebas neue', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 50px;
+    margin-bottom: 20px; 
+}
+
+/* Nav/Header */
+/* Main Body */
+
+.about {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.selfie {
+    height: 350px;
+    border-radius: 15px;
+    box-shadow:  -20px 20px 60px #bebebe,
+             20px -20px 60px #ffffff;
+    margin-left: 10px;
+    margin-right: 25px;
+    margin-bottom: 15px;
+}
+
+.about_text {
+    width: 700px;
+    text-align: center;
+    margin-left: 25px;
+    font-size: 18px;
+    border-radius: 50px;
+    background: linear-gradient(225deg, #f0f0f0, #cacaca);
+    box-shadow:  -20px 20px 60px #bebebe,
+             20px -20px 60px #ffffff;
+    padding: 50px 50px;
+}
+
+.about_text p {
+    color: transparent;
+    text-shadow: 0 0 5px black;
+    animation: unblur 6s forwards;
+}
+
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+  }
+  
+  .skills {
+    width: auto;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin-top:80px;
+    margin-bottom: 100px;
+    
+  }
+
+  .skillimg img {
+      width: 80px;
+      padding: 50px;
+      animation: fadeRight 1s ease-in-out;
+  }
+
+
+/* Main Body */
+
+/* Projects */
+
+.proj_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    animation: fadeRight .75s ease-in-out;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+/* Projects */
+
+/* Contact */
+.cont_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 125px;
+    margin-bottom: 70px;
+}
+
+.methods {
+    font-size: 1.7rem;
+    width: 30%;
+    justify-content: center;
+    text-align: left;
+    margin-left: 40px;
+    margin-bottom: 25px;
+}
+
+.color a {
+    color: #960a0a;
+}
+
+.contact_form {
+    display: flex;
+    color: #fff;
+    background-color: #2c4664;
+    width: 750px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 28px 5px;
+    border-radius: 15px;
+    box-shadow:  0px 7px 8px 3px rgba(0, 0, 0, 0.4);
+    margin-bottom: 25px;
+}
+
+.inputs {
+    width: 500px;
+    border-radius: 2px;
+    border: none;
+}
+
+textarea {
+    resize: none;
+    height: 200px;
+
+}
+
+.submit {
+    border: none;
+    width: 200px;
+    background-color: #960a0a;
+    color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.submit:hover {
+    background-color: #b91313;
+    cursor: pointer;
+}
+
+/* Footer */
+
+  .footer {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    min-height: 17vh;
+    background: #960a0a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #a73939, #960a0a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #a73939, #960a0a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-top: 1px solid black;
+    margin-top: 100px;
+    
+  }
+
+  .logo_cont{
+      margin-top: 50px;
+      height: 20px;
+      animation: fadeRight 1s ease-in-out;
+}
+  
+  .socials {
+      vertical-align: bottom;
+      border: none;
+      width: 25px;
+      margin-left: 15px;
+      margin-right: 15px;
+      padding: 10px;
+    
+      
+     }
+ 
+  a:hover .socials{
+    transition: .5s;
+    background: #2a507a;
+    border-radius: 10px;
+    
+}
+
+  a:visited .socials { 
+    color: #ffffff;
+    
+}
+
+
+/* Footer */
+
+@media screen and (max-width: 850px) {
+    .logo {
+        font-size: 12px;
+    }
+    .selfie {
+        width: 275px;
+        height: auto;
+        margin-left: 25px;
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        border: 1px solid black;
+       
+    }
+    .about_text {
+        width: auto;
+        height: auto;
+        margin-top: 15px;
+        margin-right: 20px;
+        font-size: 13px;
+        background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        padding: 10px;
+        
+        
+    }
+    .skills {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
+
+    .skillimg {
+        display: flex;
+        width: auto;
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer {
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        text-align: center;
+        min-height: 13vh;
+        background: #960a0a;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #a73939, #960a0a);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #a73939, #960a0a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        border-top: 1px solid black;
+        margin-top: 130px;
+        
+      }
+
+      .logo_cont{
+        margin-top: 25px;
+        height: 20px;
+        animation: fadeRight 1s ease-in-out;
+  }
+
+      .proj_container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        text-align: center;
+        animation: fadeRight .75s ease-in-out;
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
+
+    .projects img{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 650px; 
+    }
+
+    .methods {
+        width: auto;
+        font-size: 1.25rem;
+        margin-bottom: 25px;
+    }
+    .cont_container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 85px;
+    }
+
+    .contact_form {
+        display: flex;
+        background-color: #2c4664;
+        width: 100%;
+        height: 350px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-right: 21px;
+        padding: 5px;
+        border-radius: 15px;
+        box-shadow:  0px 7px 8px 3px rgba(0, 0, 0, 0.4);
+        margin-bottom: 51px;
+        margin-left: 20px;
+    }
+
+    textarea {
+        height: 80px;
+    }
+
+    .inputs {
+        width: 300px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .fixed-nav {
+        display: block;
+    }
+
+    .fixed-nav a {
+        justify-content: space-around;
+        color: white;
+        padding: 10px;
+    }
+}
+
+/* Animations */
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+/* @keyframes fadeRight {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+    }
+} */
+
+@keyframes unblur {
+    to {
+        color: black;
+        text-shadow: none;
+    } 
+}
